@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-progress-bar'`, () => {
+  it(`should have as title 'angular-rating-bar'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-progress-bar');
+    expect(app.title).toEqual('angular-rating-bar');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-progress-bar app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-rating-bar app is running!');
   });
 });

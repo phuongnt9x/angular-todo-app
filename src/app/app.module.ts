@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { RatingBarComponent } from './rating-bar/rating-bar.component';
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
-    ProgressBarComponent
+    RatingBarComponent
   ],
   imports: [
     BrowserModule,
