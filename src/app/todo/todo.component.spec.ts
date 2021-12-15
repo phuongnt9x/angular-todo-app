@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RatingBarComponent } from './rating-bar.component';
+import { TodoComponent } from './todo.component';
 
-describe('RatingBarComponent', () => {
-  let component: RatingBarComponent;
-  let fixture: ComponentFixture<RatingBarComponent>;
+describe('TodoComponent', () => {
+  let component: TodoComponent;
+  let fixture: ComponentFixture<TodoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RatingBarComponent ]
+      declarations: [ TodoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RatingBarComponent);
+    fixture = TestBed.createComponent(TodoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

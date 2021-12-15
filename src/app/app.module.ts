@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RatingBarComponent } from './rating-bar/rating-bar.component';
+import { TodoComponent } from './todo/todo.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 // @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
-    RatingBarComponent
+    TodoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
