@@ -1,0 +1,13 @@
+<h2 class="text-center">
+  Todo App
+</h2>
+<div class="col-md-8 offset-md-2">
+  <label class="col-form-label-lg">To do</label>
+  <input type="text" class="form-control" [formControl]="content" (change)="createTodo()">
+  <ul class="list-group">
+    <li  *ngFor="let todo of todos; index as i">
+      {{todo.content}}
+    </li>
+  </ul>
+  <pre>{{todos.length |json}}</pre>
+</div>

@@ -1,0 +1,13 @@
+<h1>Update To do</h1>
+<form *ngIf="content" [formGroup]="content" (ngSubmit)="updateTodo(id)">
+  <table>
+    <tr>
+      <td>Noi dung:</td>
+      <td><input type="text" formControlName="content"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Cập nhật</button></td>
+    </tr>
+  </table>
+</form>
